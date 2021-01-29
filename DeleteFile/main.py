@@ -12,7 +12,7 @@ import os
 
 
 def DeleteFile(AddressFile):  # Delete existing file:
-  if CheckFile(AddressFile) != True:  # If the file does not exist:
+  if CheckFile(AddressFile):  # If the file does not exist:
     return False  # Answer: The file to be deleted does not exist.
 
   try:  # Delete the file:
