@@ -8,16 +8,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
   pass
 
 
-#Удалить файл
-def delete_file():
-    """
-    https://github.com/khomaldi/pyconsoleeditor/blob/065f66637d1ec8bcfa530307d43611d823dd1110/py.py#L170
-    """
-    name = input('Введине имя файла: ')
-    os.remove(name)
-    clear()
-    menu_programm()
-    pass
+import os
 
 
 def DeleteFile(AddressFile):  # Удаляем существующий файл.
@@ -27,6 +18,7 @@ def DeleteFile(AddressFile):  # Удаляем существующий файл
     #'return True'
   
   try:  # Удаляем файл: 
+    os.remove(AddressFile)
     #delete_file(AddressFile)
     return True  # Файл сущестовал и удалился.
   
