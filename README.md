@@ -1,4 +1,4 @@
-# WorkFiles
+# WorkingWithFiles
 Functions for working with files.
 
 
