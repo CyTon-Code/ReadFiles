@@ -11,7 +11,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 def WriteFile(AddressFile):  # Check if the file exists:
   """This module is required to read a file (or module).
   It can also check if a file (or module) exists."""
-  # Credo: ...
+  # Сredo: Checking the file for editable...
   
   FileOpen = True
   try:  # Открываю файл или Создаю файл:
@@ -32,7 +32,7 @@ def WriteFile(AddressFile):  # Check if the file exists:
       except:  # Записать не получилось:
         return None
 
-  except:  # Файл не открылся:
+  except:  # Файл не открылся или не создался:
     print("File is not defined. File:", AddressFile)
     FileOpen = False
 
@@ -44,6 +44,6 @@ def WriteFile(AddressFile):  # Check if the file exists:
       pass
 
     except:  # Файл не закрылся:
-      raise Error
-    pass
+      if FileOpen:  # If the file open:
+        raise Error
   pass
