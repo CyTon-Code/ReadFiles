@@ -19,14 +19,14 @@ def CheckFile(AddressFile):  # Check if the file exists:
 
     try:  # The file is read:
       File.read()
-      return True  # Answer: The file is there, and it has been read.
+      return False  # Answer: The file is there, and it has been read.
         
     except:  # File not read:
       return None  # Answer: The file is present, but not readable.
     
   except:  # The file did not open:
     print("File is not defined. File:", AddressFile)
-    FileOpen = False  # At the end of the function, the file cannot be closed (it has not been opened).
+    FileOpen = True  # At the end of the function, the file cannot be closed (it has not been opened).
     return FileOpen  # Answer: The file is missing or has not been read.
   
   finally:
