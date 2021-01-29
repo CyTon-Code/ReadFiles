@@ -29,5 +29,5 @@ Functions for working with files.
 <ul>
  <li>RenameFile.py - A function to rename a file if it exists.</li>
  <li>CutFile.py - Function to move file if file exists (old path is correct).</li>
- <li>SafeCutFile.py - A function to move a file if the file exists (the old path points to a file) and if there is no file in the final path (the new path does not point to a file.</li>
+ <li>SafeCutFile.py - A function to move a file if the file exists (the old path points to a file) and if there is no file in the final path (the new path does not point to a file).</li>
 </ul>
