@@ -1,25 +1,25 @@
 # WorkFiles
-Функции для работы с файлами.
+Functions for working with files.
 
 
 <h4>On a note:</h4>
 <ul>
  .Completed - The development of this feature has already been completed.
- <li>In development - the feature is still in development.</li>
+ <li>In development - The feature is still in development.</li>
 </ul>
 
 
-<h4>lvl0:</h4>
+<h4>Main functions:</h4>
 <ul>
- .CheckFile.py - функция для проверки файла (на существование, чтение), перед работой с ним.
- <li>WriteFile.py - функция для проверки файла (на редактирование, создание), перед работой с ним.</li>
+ .CheckFile.py - The function of checking a file (for presence, reading) before working with it.
+ <li>WriteFile.py - The function of checking a file (for editing, creating) before working with it.</li>
 </ul>
 
 
 <h4>lvl1:</h4>
 <ul>
  <li>DeleteFile.py - функция для удаления файла, если он есть.</li>
- <li>CreateFile.py - функция для создания файла, если его нет.</li>
+ <il>CreateFile.py - функция для создания файла, если его нет.</il>
  <li>EditFile.py - функция для редактирования файла, если он есть.</li>
  <li>SaveFile.py - функция для редактирования файла, если его нет.</li>
 </ul>
