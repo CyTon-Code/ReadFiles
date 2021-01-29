@@ -34,6 +34,6 @@ def CheckFile(AddressFile):  # Check if the file exists:
       File.close()
 
     except:  # The file didn't close:
-      if not FileOpen:  # If the file is not open:
+      if FileOpen:
         raise TheFileDidntClose  # Answer: The file won't close! We throw in the program: "Exception".
   pass
