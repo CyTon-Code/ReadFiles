@@ -1,5 +1,5 @@
 """The module works only through import.
-    Via os.system or return (RUN) - doesn't work."""
+  Via os.system or return (RUN) - doesn't work."""
 
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
