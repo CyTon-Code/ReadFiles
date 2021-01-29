@@ -18,16 +18,16 @@ Functions for working with files.
 
 <h4>lvl1:</h4>
 <ul>
- <li>DeleteFile.py - функция для удаления файла, если он есть.</li>
- <il>CreateFile.py - функция для создания файла, если его нет.</il>
- <li>EditFile.py - функция для редактирования файла, если он есть.</li>
- <li>SaveFile.py - функция для редактирования файла, если его нет.</li>
+ <li>DeleteFile.py - A function to delete a file if it exists.</li>
+ <li>CreateFile.py - Function to create a file if the file does not exist.</li>
+ <li>EditFile.py - Function for editing the file, if it exists.</li>
+ <li>SaveFile.py - A function to edit a file if it doesn't exist.</li>
 </ul>
 
 
 <h4>lvl2:</h4>
 <ul>
- <li>RenameFile.py - функция для переименования файла, если он есть.</li>
- <li>CutFile.py - функция для перемещение файла, если он есть (старый путь).</li>
- <li>SafeCutFile.py - CutFile.py + если файла нет (новый путь).</li>
+ <li>RenameFile.py - A function to rename a file if it exists.</li>
+ <li>CutFile.py - Function to move file if file exists (old path is correct).</li>
+ <li>SafeCutFile.py - A function to move a file if the file exists (the old path points to a file) and if there is no file in the final path (the new path does not point to a file.</li>
 </ul>
