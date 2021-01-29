@@ -4,14 +4,14 @@ Functions for working with files.
 
 <h4>On a note:</h4>
 <ul>
- .Completed - The development of this feature has already been completed.
+ Completed - The development of this feature has already been completed.
  <li>In development - The feature is still in development.</li>
 </ul>
 
 
 <h4>Main functions:</h4>
 <ul>
- .CheckFile.py - The function of checking a file (for presence, reading) before working with it.
+ CheckFile.py - The function of checking a file (for presence, reading) before working with it.
  <li>WriteFile.py - The function of checking a file (for editing, creating) before working with it.</li>
 </ul>
 
