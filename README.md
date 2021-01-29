@@ -18,7 +18,7 @@ Functions for working with files.
 <h4>Important functions:</h4>
 <ul>
  <li>WriteFile.py - The function of checking a file (for editing and creating) before working with it.</li>
- <li>DeleteFile.py - A function to delete a file if it exists.</li>
+ . DeleteFile.py - A function to delete a file if it exists.
  <li>CreateFile.py - Function to create a file if the file does not exist.</li>
 </ul>
 
