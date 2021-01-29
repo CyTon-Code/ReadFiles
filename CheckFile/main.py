@@ -26,8 +26,8 @@ def CheckFile(AddressFile):  # Check if the file exists:
     
   except:  # The file did not open:
     print("File is not defined. File:", AddressFile)
-    FileOpen = True  # At the end of the function, the file cannot be closed (it has not been opened).
-    return FileOpen  # Answer: The file is missing or has not been read.
+    FileOpen = False  # At the end of the function, the file cannot be closed (it has not been opened).
+    return not FileOpen  # Answer: The file is missing or has not been read.
   
   finally:
     try:  # Closes the file:
