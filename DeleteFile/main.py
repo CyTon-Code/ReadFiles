@@ -9,12 +9,13 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 
 def DeleteFile(AddressFile):  # Удаляем существующий файл.
   if CheckFile(AddressFile) != True:  # Если файл не существует:
-    return None  # Файла для удаления не существует.
-    pass  # Если цель ваша просто удалить файл, то можете сменить на True
+    return False  # Файла для удаления не существует.
+    # Если цель ваша просто удалить файл, то можете сменить на:
+    #'return True'
   
   try:  # Удаляем файл: 
     #delete_file(AddressFile)
     return True  # Файл сущестовал и удалился.
   
   except:  # Удалить не получилось:
-    return False  # Файл существует но не удалился.
+    return None  # Файл существует но не удалился.
