@@ -5,6 +5,19 @@
 if __name__ == "__main__":  # If not imported, I exit is the module:
   print("I am is Module!!! Bye Bye!!!")    
   exit()  # Answer: I'm leaving, I'm a module.
+  pass
+
+
+#Удалить файл
+def delete_file():
+    """
+    https://github.com/khomaldi/pyconsoleeditor/blob/065f66637d1ec8bcfa530307d43611d823dd1110/py.py#L170
+    """
+    name = input('Введине имя файла: ')
+    os.remove(name)
+    clear()
+    menu_programm()
+    pass
 
 
 def DeleteFile(AddressFile):  # Удаляем существующий файл.
