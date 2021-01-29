@@ -14,30 +14,17 @@ def WriteFile(AddressFile):  # Check if the file exists:
   # Credo: ...
   
   FileOpen = True
-  
-  if CheckFile(AddressFile):  # Файла нет:
-    # Я буду проверять на создание файла.
-    try:  # Создаю файл:
-      File = open(AddressFile, 'w')
-      return False
-    
-    except:  # Файл не создался:
-      print("File is not created. File:", AddressFile)
-      return True
+  try:  # Открываю файл или Создаю файл:
+    File = open(AddressFile, 'w')
 
-    finally:
-      try:  # Закрываю файл:
-        File.close()
-        pass
+    if CheckFile(AddressFile):  # Если файла нет:
+      # Я буду проверять на создание файла:
+      #TODO Нужно удалить за собой файл AddressFile
+      #TODO FileOpen = False  # Нужно сказать что файл не открылся.
+      return False  # Файл создать можно.
 
-      except:  # Файл не закрылся:
-        raise Error
-    
-  else:  # файл есть:
-    # Я буду проверять на редактирование файла.
-    try:  # Открываю файл:
-      File = open(AddressFile, 'w')
-
+    else:  # Файл есть:
+      # Я буду проверять на редактирование файла:
       try:  # записываю в файл:
         File.write('')
         return False
@@ -45,18 +32,18 @@ def WriteFile(AddressFile):  # Check if the file exists:
       except:  # Записать не получилось:
         return None
 
-    except:  # Файл не открылся:
-      print("File is not defined. File:", AddressFile)
-      FileOpen = False
+  except:  # Файл не открылся:
+    print("File is not defined. File:", AddressFile)
+    FileOpen = False
 
-      return not FileOpen
+    return not FileOpen  # True
 
-    finally:
-      try:  # Закрываю файл:
-        File.close()
-        pass
+  finally:
+    try:  # Закрываю файл:
+      File.close()
+      pass
 
-      except:  # Файл не закрылся:
-        raise Error
+    except:  # Файл не закрылся:
+      raise Error
     pass
   pass
