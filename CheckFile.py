@@ -18,6 +18,7 @@ def CheckFile(AddressFile):  # Check if the file exists:
             return True  # answer: The file is there, and it has been read.
         
         except:  # File not read:
+            #return None
             pass  # answer: The file is present, but not readable.
     
     except:  # The file did not open:
@@ -29,6 +30,6 @@ def CheckFile(AddressFile):  # Check if the file exists:
             File.close()
         
         except:  # The file didn't close:
-            #  ~ raise Exception
+            #raise Exception
             pass  # answer: The file won't close! We throw in the program: "Exception".
     pass
