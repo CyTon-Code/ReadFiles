@@ -16,7 +16,7 @@ Functions for working with files.
 </ul>
 
 
-<h4>lvl1:</h4>
+<h4>Important functions:</h4>
 <ul>
  <li>DeleteFile.py - A function to delete a file if it exists.</li>
  <li>CreateFile.py - Function to create a file if the file does not exist.</li>
@@ -25,7 +25,7 @@ Functions for working with files.
 </ul>
 
 
-<h4>lvl2:</h4>
+<h4>Additional functions:</h4>
 <ul>
  <li>RenameFile.py - A function to rename a file if it exists.</li>
  <li>CutFile.py - Function to move file if file exists (old path is correct).</li>
