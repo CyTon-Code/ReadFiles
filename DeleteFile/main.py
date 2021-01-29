@@ -1,5 +1,3 @@
-# Функция для удаления файла, если он существует.
-
 """The module works only through import.
     Via os.system or return (RUN) - doesn't work."""
 
