@@ -35,5 +35,4 @@ def CheckFile(AddressFile):  # Check if the file exists:
       if (Process != False):
         raise Exception  # Answer: The file won't close! We throw in the program: "Exception".
     
-    return Process
-  pass
+  return Process
