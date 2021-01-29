@@ -28,6 +28,6 @@ Functions for working with files.
  <li>EditFile.py - Function for editing the file, if it exists.</li>
  <li>SaveFile.py - A function to edit a file if it doesn't exist.</li>
  <li>RenameFile.py - A function to rename a file if it exists.</li>
- <li>CutFile.py - Function to move file if file exists (old path is correct).</li>
+ <li>CutFile.py - Function to move file if file exists (the old path points to a file).</li>
  <li>SafeCutFile.py - A function to move a file if the file exists (the old path points to a file) and if there is no file in the final path (the new path does not point to a file).</li>
 </ul>
