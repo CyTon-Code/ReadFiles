@@ -1,4 +1,4 @@
-# Я пока что плохо разбираюсь в GitHub, напишу сюда когда узнаю что написать.
+# I'm not very good with GitHub yet, I'll post here when I know what to write.
 
 
-А пока что буду рад любой помощи.
+But all the same I will be glad to any help.
