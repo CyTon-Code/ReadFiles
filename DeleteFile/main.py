@@ -11,15 +11,13 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 import os
 
 
-def DeleteFile(AddressFile):  # Удаляем существующий файл.
-  if CheckFile(AddressFile) != True:  # Если файл не существует:
-    return False  # Файла для удаления не существует.
-    # Если цель ваша просто удалить файл, то можете сменить на:
-    #'return True'
-  
-  try:  # Удаляем файл: 
+def DeleteFile(AddressFile):  # Delete existing file:
+  if CheckFile(AddressFile) != True:  # If the file does not exist:
+    return False  # Answer: The file to be deleted does not exist.
+
+  try:  # Delete the file:
     os.remove(AddressFile)
-    return True  # Файл сущестовал и удалился.
-  
-  except:  # Удалить не получилось:
-    return None  # Файл существует но не удалился.
+    return True  # Answer: The file existed and was deleted.
+
+  except:  # Delete failed:
+    return None  # Answer: The file exists but has not been deleted.
