@@ -19,7 +19,6 @@ def DeleteFile(AddressFile):  # Удаляем существующий файл
   
   try:  # Удаляем файл: 
     os.remove(AddressFile)
-    #delete_file(AddressFile)
     return True  # Файл сущестовал и удалился.
   
   except:  # Удалить не получилось:
