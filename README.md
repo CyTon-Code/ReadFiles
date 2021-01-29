@@ -11,13 +11,13 @@ Functions for working with files.
 
 <h4>Main functions:</h4>
 <ul>
- . CheckFile.py - The function of checking a file (for presence, reading) before working with it.
+ . CheckFile.py - The function of checking a file (for presence and reading) before working with it.
 </ul>
 
 
 <h4>Important functions:</h4>
 <ul>
- <li>WriteFile.py - The function of checking a file (for editing, creating) before working with it.</li>
+ <li>WriteFile.py - The function of checking a file (for editing and creating) before working with it.</li>
  <li>DeleteFile.py - A function to delete a file if it exists.</li>
  <li>CreateFile.py - Function to create a file if the file does not exist.</li>
 </ul>
