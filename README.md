@@ -2,10 +2,10 @@
 Функции для работы с файлами.
 
 
-<h4>На заметку:</h4>
+<h4>On a note:</h4>
 <ul>
- .Завершен - так помечаються завершенные функции.
- <li>Не завершен - так помеаються функции которые еще в разработке.</li>
+ .Completed - The development of this feature has already been completed.
+ <li>In development - the feature is still in development.</li>
 </ul>
 
 
