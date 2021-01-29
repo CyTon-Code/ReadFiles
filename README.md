@@ -10,8 +10,9 @@ Functions for working with files.
 
 
 <h4>Main functions:</h4>
-<ul>
- CheckFile.py - The function of checking a file (for presence, reading) before working with it.
+<ol>
+ <li>CheckFile.py - The function of checking a file (for presence, reading) before working with it.</li>
+ </ol><ul>
  <li>WriteFile.py - The function of checking a file (for editing, creating) before working with it.</li>
 </ul>
 
