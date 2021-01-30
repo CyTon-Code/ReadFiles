@@ -4,14 +4,14 @@ Functions for working with files.
 
 <h4>On a note:</h4>
 <ul>
- <br>. Completed - The development of this feature has already been completed.
+ <br>_ Completed - The development of this feature has already been completed.
  <li>In development - The feature is still in development.
 </ul>
 
 
 <h4>Main functions:</h4>
 <ul>
- <br>. CheckFile.py - The function of checking a file (for presence and
+ <br>_ CheckFile.py - The function of checking a file (for presence and
 reading) before working with it.
 </ul>
 
@@ -20,7 +20,7 @@ reading) before working with it.
 <ul>
  <li>WriteFile.py - The function of checking a file (for editing and creating)
 before working with it.
- <br>. DeleteFile.py - A function to delete a file if it exists.
+ <br>_ DeleteFile.py - A function to delete a file if it exists.
  <li>CreateFile.py - Function to create a file if the file does not exist.
 </ul>
 
