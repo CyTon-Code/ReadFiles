@@ -1,0 +1,28 @@
+On a note:
+  [!] Completed - This function has ended.
+  [_] In development - the function is still in development.
+  [*] Planned - feature not yet under development.
+  [#] Idea - No feature planned yet, idea can be deleted.
+
+
+Main functions:
+  [!] CheckFile.py - The function of checking a file (for presence and reading)
+before working with it.
+
+
+Important functions:
+  [_] WriteFile.py - The function of checking a file (for editing and creating)
+before working with it.
+  [!] DeleteFile.py - A function to delete a file if it exists.
+  [*] CreateFile.py - Function to create a file if the file does not exist.
+
+
+Additional functions:
+  [*] EditFile.py - Function for editing the file, if it exists.
+  [*] SaveFile.py - A function to edit a file if it doesn't exist.
+  [*] RenameFile.py - A function to rename a file if it exists.
+  [*] CutFile.py - Function to move file if file exists (the old path points to
+a file).
+  [*] SafeCutFile.py - A function to move a file if the file exists (the old
+path points to a file) and if there is no file in the final path (the new path
+does not point to a file).
