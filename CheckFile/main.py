@@ -13,7 +13,7 @@ def CheckFile(AddressFile):  # Check if the file exists:
   It can also check if a file (or module) exists."""
   # Credo: Checking file readability...
   
-  FileOpen = True  
+  FileOpen = True
 
   try:  # Opens a file:
     File = open(AddressFile, 'r')
