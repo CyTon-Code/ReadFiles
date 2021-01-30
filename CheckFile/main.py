@@ -7,6 +7,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
   exit()  # Answer: I'm leaving, I'm a module.
   pass
 
+
 def CheckFile(AddressFile):  # Check if the file exists:
   """This module is required to read a file (or module).
   It can also check if a file (or module) exists."""
@@ -26,7 +27,8 @@ def CheckFile(AddressFile):  # Check if the file exists:
     
   except:  # The file did not open:
     print("File is not defined. File:", AddressFile)
-    FileOpen = False  # At the end of the function, the file cannot be closed (it has not been opened).
+    FileOpen = False  # At the end of the function, the file cannot be closed
+    #(it has not been opened).
     
     return not FileOpen  # Answer: The file is missing or has not been read.
   
@@ -36,5 +38,5 @@ def CheckFile(AddressFile):  # Check if the file exists:
 
     except:  # The file didn't close:
       if FileOpen:  # If the file open:
-        raise TheFileDidntClose  # Answer: The file won't close! We throw in the program: "Exception".
-  pass
+        raise TheFileDidntClose  # Answer: The file won't close! We throw in
+        #the program: "Exception".
