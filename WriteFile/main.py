@@ -8,6 +8,16 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
   exit()  # Answer: I'm leaving, I'm a module.
   pass
 
+
+def CreatFile(AddressFile):
+  f = open(AddressFile, 'w')
+  f.close()
+  pass
+
+
+def 
+
+
 def WriteFile(AddressFile):  # Check if the file exists:
   """This module is required to read a file (or module).
   It can also check if a file (or module) exists."""
@@ -19,8 +29,28 @@ def WriteFile(AddressFile):  # Check if the file exists:
 
     if CheckFile(AddressFile):  # Если файла нет:
       # Я буду проверять на создание файла:
+      try: Создаю файл:
+        f = open(AddressFile, 'w')
+        f.close()
+        return False
+      
+      except: Не создал файл:
+        FileOPn = False
+        return None
+
+      #     except:
+      #       pass
+      finally:
+        try: Удаляю файл
+          from DeleteFile import main.DeleteFile
+          main.DeleteFile(AddressFile)
+
+        except: Не удалил файл:
+          if FileOpen:  # If the file open:
+            raise ErrorCreat
+        
       #TODO Нужно удалить за собой файл AddressFile
-      #TODO FileOpen = False  # Нужно сказать что файл не открылся.
+      FileOpen = False  # Нужно сказать что файл не открылся.
       return False  # Файл создать можно.
 
     else:  # Файл есть:
@@ -45,5 +75,5 @@ def WriteFile(AddressFile):  # Check if the file exists:
 
     except:  # Файл не закрылся:
       if FileOpen:  # If the file open:
-        raise Error
+        raise ErrorEdit
   pass
