@@ -12,14 +12,14 @@ Functions for working with files.
 <h4>Main functions:</h4>
 <ul>
  <br>. CheckFile.py - The function of checking a file (for presence and
-reading) before working with it.
+ <br>reading) before working with it.
 </ul>
 
 
 <h4>Important functions:</h4>
 <ul>
  <li>WriteFile.py - The function of checking a file (for editing and creating)
-before working with it.
+ <br>before working with it.
  <br>. DeleteFile.py - A function to delete a file if it exists.
  <li>CreateFile.py - Function to create a file if the file does not exist.
 </ul>
@@ -31,9 +31,9 @@ before working with it.
  <li>SaveFile.py - A function to edit a file if it doesn't exist.
  <li>RenameFile.py - A function to rename a file if it exists.
  <li>CutFile.py - Function to move file if file exists (the old path points to
-a file).
+ <br>a file).
  <li>SafeCutFile.py - A function to move a file if the file exists (the old
-path points to a file) and if there is no file in the final path (the new path
-does not point to a file).
+ <br>path points to a file) and if there is no file in the final path (the new
+ <br>path does not point to a file).
 </ul>
 
