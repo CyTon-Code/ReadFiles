@@ -10,8 +10,8 @@ a description of the module or its documentation
 
 
 Main modules:
-  [!] CheckFile.py - The function of checking a file (for presence and reading)
-before working with it.
+  [@] CheckFile.py - The function of checking a file (for presence and reading)
+before working with it. -> CheckFile.py and CheckReadFile.py
 
 
 Important modules:
