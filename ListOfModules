@@ -2,11 +2,11 @@
 
 On a note:
   [!] Completed - This module has been completed.
-  [_] Under development - the module is still under development.
-  [*] Planned - the module is not yet in development. Perhaps there is already
-a description of the module or its documentation
+  [_] Under development - The module is still under development.
+  [*] Planned - The module is not yet in development. Perhaps a description of
+the module or its documentation is already underway.
   [#] Idea - The module has not been planned yet, the idea may be rejected.
-  [@] RE - old function will be: removed or replaced. (irreversible process).
+  [@] Re - Old function will be: removed or replaced. (irreversible process).
 
 
 Main modules:
