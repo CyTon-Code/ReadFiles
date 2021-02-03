@@ -10,28 +10,29 @@ a description of the module or its documentation
 
 
 Main modules:
-  [@] CheckFile.py - The function of checking a file (for presence and reading)
-before working with it. -> CheckFile.py and CheckReadFile.py
+  [@] CheckFile - The function of checking a file (for presence and reading)
+before working with it.
 
 
 Important modules:
-  [@] WriteFile.py - The function of checking a file (for editing and creating)
+  [_] CheckReadFile - The module checks the readability of files.
+  [@] WriteFile - The function of checking a file (for editing and creating)
 before working with it.
-  [!] DeleteFile.py - A function to delete a file if it exists.
-  [*] CreateFile.py - Function to create a file if the file does not exist.
+  [!] DeleteFile - A function to delete a file if it exists.
+  [*] CreateFile - Function to create a file if the file does not exist.
 
 
 Additional modules:
-  [*] EditFile.py - Function for editing the file, if it exists.
-  [*] SaveFile.py - A function to edit a file if it doesn't exist.
-  [*] RenameFile.py - A function to rename a file if it exists.
-  [*] CutFile.py - Function to move file if file exists (the old path points to
+  [*] EditFile - Function for editing the file, if it exists.
+  [*] SaveFile - A function to edit a file if it doesn't exist.
+  [*] RenameFile - A function to rename a file if it exists.
+  [*] CutFile - Function to move file if file exists (the old path points to
 a file).
-  [*] SafeCutFile.py - A function to move a file if the file exists (the old
+  [*] SafeCutFile - A function to move a file if the file exists (the old
 path points to a file) and if there is no file in the final path (the new path
 does not point to a file).
 
 
 Plugins:
-  [!] CheckFile.py - The function of checking a file (for presence and reading)
+  [!] CheckFile - The function of checking a file (for presence and reading)
 before working with it.
