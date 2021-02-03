@@ -10,8 +10,8 @@ a description of the module or its documentation
 
 
 Main modules:
-  [@] CheckFile - The function of checking a file (for presence and reading)
-before working with it.
+  [@] CheckFile - The function of checking a file (for existence) before
+working with it.
 
 
 Important modules:
