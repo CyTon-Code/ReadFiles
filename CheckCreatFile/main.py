@@ -15,19 +15,16 @@ def CheckCreatFile(AddressFile):  # Check if the file is being created:
   """This module is required to create a file (or module)."""
   # Сredo: Checking the file for editable...
   
-  if CheckFile(AddressFile):  # Если файл существует:
-    return False
-  
-  #Решение проблемы с закрытием файлов, которые не открывались:
+  # Решение проблемы с закрытием файлов, которые не открывались:
   FileOpen = True
   
   try:  # Создаю файл:
     File = open(AddressFile, 'x')
-    return True
+    return False
   
   except:  # Файл не создался:
     FileOpen = False
-    return None
+    return True
   
   finally:
     try:  # Закрываю файл:
