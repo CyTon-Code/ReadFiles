@@ -5,6 +5,7 @@ On a note:
   [_] Under development - the module is still under development.
   [*] Planned - the module is not yet in development.
   [#] Idea - The module has not been planned yet, the idea may be rejected.
+  [@] RE - old function will be: removed or replaced. (irreversible process).
 
 
 Main modules:
@@ -13,7 +14,7 @@ before working with it.
 
 
 Important modules:
-  [_] WriteFile.py - The function of checking a file (for editing and creating)
+  [@] WriteFile.py - The function of checking a file (for editing and creating)
 before working with it.
   [!] DeleteFile.py - A function to delete a file if it exists.
   [*] CreateFile.py - Function to create a file if the file does not exist.
