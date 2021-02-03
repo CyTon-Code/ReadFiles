@@ -7,13 +7,14 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
   exit()  # Answer: I'm leaving, I'm a module.
   pass
 
+from CheckFile.main import CheckFile
+import os
 
 def DeleteFile(AddressFile):  # Delete existing file:
   if CheckFile(AddressFile):  # If the file does not exist:
     return False  # Answer: The file to be deleted does not exist.
 
   try:  # Delete the file:
-    import os
     os.remove(AddressFile)
     return True  # Answer: The file existed and was deleted.
 

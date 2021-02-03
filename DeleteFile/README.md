@@ -2,16 +2,16 @@
 
 
 <h4>What can you expect from her:</h4>
-<ul>
- <li>'True' - the file existed and was deleted (the address is correct).</li>
- <li>'False' - The file did not exist and was not deleted (wrong address).</li>
- <li>'Exception' or 'None' - file exists and has not been deleted.</li>
-</ul>
+
+- 'True' - the file existed and was deleted (the address is correct).
+- 'False' - The file did not exist and was not deleted (wrong address).
+- 'Exception' or 'None' - file exists and has not been deleted.
 
 
 <h4>On A Note:</h4>
-<ul>
- <li>If you use the function only for the effect of deleting a file,
-  then in this case: both False and True say: The specified file no longer
-  exists at the specified address.</li>
-</ul>
+
+- If you only use the function for the file delete effect,
+then in this case: both False and True say: The specified file is no longer
+exists at the specified address. And if you check the return type: type
+(DeleteFile (AddressFile)) == bool then True (file deleted) and False (file
+not deleted).
