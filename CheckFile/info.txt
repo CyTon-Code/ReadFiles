@@ -1,3 +1,9 @@
+This function is designed to check the existence of a file and answers the question: "The file does not exist ??".
+
+The function can also answer the questions: "Will the file be closed?" and "Can't read the file?"
+
+
+
 Эта функция придумана для проверки на наличие файла и отвечает на вопрос: "Файл же не существует?".
 
 Функция также может ответить на вопросы: "Файл закроется?" и "Файл же нельзя читать?".
