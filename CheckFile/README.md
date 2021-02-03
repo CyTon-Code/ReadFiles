@@ -5,12 +5,11 @@
  What can you expect from her:
 </h4>
 
-- 'False' - File read (address is correct).
+- "False" - The file is open (the address is correct).
 
-- 'True' - The file did not open (the address is incorrect).
+- "True" - The file was not opened (incorrect address).
 
-- 'Exception' or 'None' - The file did not close or was not read.
-
+- "Exception" - the file is not closed.
 
 <h4>
  Detailed instructions for using the module:
