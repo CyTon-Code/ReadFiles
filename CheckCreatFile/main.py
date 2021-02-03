@@ -19,12 +19,8 @@ def CheckCreatFile(AddressFile):  # Check if the file is being created:
     try:  # Закрываю файл:
       File.close()
       
-      try:
-        # TODO DeleteFile(AddressFile)
-        pass
-      
-      except:
-        # raise ErrorClearFile
+      if DeleteFile(AddressFile) == None:  # Удаляю файл:
+        raise ErrorClearFile
         pass
 
     except:  # Файл не закрылся:
