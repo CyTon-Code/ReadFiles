@@ -34,5 +34,6 @@ does not point to a file).
 
 
 Plugins:
-  [!] CheckFile - The function of checking a file (for presence and reading)
-before working with it.
+  [!] CheckFile - The function of checking a file (for existence) before
+working with it.
+  [_] CheckReadFile - The module checks the readability of files.
