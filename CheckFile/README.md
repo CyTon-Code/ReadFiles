@@ -13,7 +13,7 @@
 
 
 <h4>
- Подробная инструкция по использованию модуля:
+ Detailed instructions for using the module:
 </h4>
 
-- [CheckFile](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/CheckFile/info.txt)
+- [Check File](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/CheckFile/info.txt)
