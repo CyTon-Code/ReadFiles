@@ -1,8 +1,11 @@
+
+from DeleteFile.main import DeleteFile
+from CheckFile.main import CheckFile
+
 def CheckCreatFile(AddressFile):  # Check if the file is being created:
   """This module is required to create a file (or module)."""
   # Сredo: Checking the file for editable...
-  
-  if CheckFile:  # Если файл существует:
+  if CheckFile(AddressFile):  # Если файл существует:
     return False
   
   FileOpen = True
@@ -18,10 +21,8 @@ def CheckCreatFile(AddressFile):  # Check if the file is being created:
   finally:  # Завершаю 
     try:  # Закрываю файл:
       File.close()
-      
       if DeleteFile(AddressFile) == None:  # Удаляю файл:
         raise ErrorClearFile
-        pass
 
     except:  # Файл не закрылся:
       if FileOpen:  # If the file open:
