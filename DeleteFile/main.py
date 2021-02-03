@@ -9,6 +9,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 
 
 def DeleteFile(AddressFile):  # Delete existing file:
+  from CheckFile.main import CheckFile
   if CheckFile(AddressFile):  # If the file does not exist:
     return False  # Answer: The file to be deleted does not exist.
 
