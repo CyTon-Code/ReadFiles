@@ -1,11 +1,19 @@
-This function is designed to check the existence of a file and answers the question: "The file does not exist ??".
+This function is designed to check the existence of a file and answers the
+question: "The file does not exist ??".
 
-The function can also answer the questions: "Will the file be closed?" and "Can't read the file?"
+
+The function can also answer the questions: "Will the file be closed?" and
+"Can't read the file?"
+
 
 If you need to know the answer to the question:
-  "The file does not exist?" - You can substitute the result of CheckFile (AddressFile) into the bool () function. False and None - No, True - Yes. bool (CheckFile (AddressFile))
-  "The file is unreadable, is it?" - The answer will be in the return type. None - Yes, bool - No. type (CheckFile (AddressFile)) == None
+  "The file does not exist?" - You can substitute the result of CheckFile
+(AddressFile) into the bool () function. False and None - No, True - Yes. bool
+(CheckFile (AddressFile))
+  "The file is unreadable, is it?" - The answer will be in the return type.
+None - Yes, bool - No. type (CheckFile (AddressFile)) == None
   "Will the file be closed?" - use the functionality: try, except.
+
 
 The function can understand and return 4 events:
   The file is missing (True).
@@ -14,25 +22,16 @@ The function can understand and return 4 events:
   The file is not closed (exception - TheFileDidntClose).
 
 
-
-Эта функция придумана для проверки на наличие файла и отвечает на вопрос: "Файл же не существует?".
-
-Функция также может ответить на вопросы: "Файл закроется?" и "Файл же нельзя читать?".
-
-Если вам нужно узнать ответ на вопрос:
-  "Файл же не существует?", то вы можете результат от CheckFile() подставить в функцию bool(). False и None - Нет, True - Да. 
-  "Файл же нельзя читать?", то ответ будет в типе возвращаемого результата None('NoneType') - Да, 'bool' - Нет.
-  "Файл закроется?", то воспользуйтесь: try, except(Исполниться только если в try есть Исключение).
-
-Функция может понять и вернуть 4 события:
- Файла нет(True) или файл есть и читается(False) а также файл есть, но не читается(None), Файл не закрылся.
+In addition to 3 events (from "return"), there is 1 more Exception
+(TheFileDidntClose - from "raise") - says that the file is not closed.
 
 
-Кроме 3 событий(от return) также есть и 1 Исключение(TheFileDidntClose - от raise) - Говорит что файл не закрывается.
-Арсенал: 2 bool значения. 1 NoneType и 1 Exception.
-События:
- Файл существует: None - Файл не прочитался. False - Файл прочитался.
- Файл не существует: True.
- Файл не закрывается: TheFileDidntClose.
+Arsenal: 2 bool values. 1 NoneType and 1 Exception.
+Events:
+  File exists: "None" - the file was not read. "False" - the file has been read.
+  File does not exist: "True".
+  The file is not closed: "TheFileDidntClose".
 
-Если вам часть функционала будет без надобности, вы вправе убрать его (Если вы понимаете что делаите).
+
+If you do not need some functionality, you have the right to remove it (if you
+understand what you are doing).
