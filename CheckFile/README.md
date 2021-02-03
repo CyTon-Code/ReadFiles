@@ -15,4 +15,5 @@
 <h4>
  Подробная инструкция по использованию модуля:
 </h4>
+
 - [CheckFile](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/CheckFile/info.txt)
