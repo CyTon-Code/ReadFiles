@@ -6,34 +6,34 @@ On a note:
   [*] Planned - The module is not yet in development. Perhaps a description of
 the module or its documentation is already underway.
   [#] Idea - The module has not been planned yet, the idea may be rejected.
-  [@] Re - Old function will be: removed or replaced. (irreversible process).
+  [@] Re - The old module will be: removed or replaced. (irreversible process).
 
 
 Main modules:
-  [!] CheckFile - The function of checking a file (for existence) before
-working with it.
+  [!] CheckFile - Module for checking a file (for presence) before working with
+it.
 
 
 Important modules:
   [_] CheckReadFile - The module checks the readability of files.
-  [@] WriteFile - The function of checking a file (for editing and creating)
+  [@] WriteFile - The module for checking a file (for editing and creating)
 before working with it.
-  [!] DeleteFile - A function to delete a file if it exists.
-  [*] CreateFile - Function to create a file if the file does not exist.
+  [!] DeleteFile - Module for deleting a file, if it exists.
+  [*] CreateFile - Module for creating a file if the file does not exist.
 
 
 Additional modules:
-  [*] EditFile - Function for editing the file, if it exists.
-  [*] SaveFile - A function to edit a file if it doesn't exist.
-  [*] RenameFile - A function to rename a file if it exists.
-  [*] CutFile - Function to move file if file exists (the old path points to
-a file).
-  [*] SafeCutFile - A function to move a file if the file exists (the old
-path points to a file) and if there is no file in the final path (the new path
-does not point to a file).
+  [*] EditFile - The module for editing the file, if it exists.
+  [*] SaveFile - Module for editing a file if it does not exist.
+  [*] RenameFile - Module for renaming the file, if it exists.
+  [*] CutFile - Module for moving the file if the file exists (the old path
+points to the file).
+  [*] SafeCutFile - Module for moving the file if the file exists (the old path
+points to the file) and if there is no file in the final path (the new path
+does not point to the file).
 
 
 Plugins:
-  [!] CheckFile - The function of checking a file (for existence) before
-working with it.
+  [!] CheckFile - Module for checking a file (for presence) before working with
+it.
   [_] CheckReadFile - The module checks the readability of files.
