@@ -1,9 +1,13 @@
+def equal(a: str, b: str):
+    return a == b
+
+
 def whats_file_name(link: str):
     """Expected example:\n
     whats_file_name("read/terminals/index.terminal")"""
 
     # If this is not a link, but garbage, then exit:
-    if link == "" or link == " " or link == "\n" or link == "\t":
+    if equal(link, "") or equal(link, " ") or equal(link, "\n") or equal(link, "\t"):
         return None
 
     # If it is not a link, then this is the filename:

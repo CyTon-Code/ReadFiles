@@ -1,37 +1,47 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
+from delete_file.main import delete_file
+
+
+class ErrorClearFile(Exception):
+    pass
+
+
+class ErrorExitFile(Exception):
+    pass
+
+
+# from check_file.main import check_file
 
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
-  print("I am is Module!!! Bye Bye!!!")    
-  exit()  # Answer: I'm leaving, I'm a module.
-  pass
+    print("I am is Module!!! Bye Bye!!!")
+    exit()  # Answer: I'm leaving, I'm a module.
+    pass
 
 
-from DeleteFile.main import DeleteFile
-from CheckFile.main import CheckFile
+def check_create_file(link):  # Check if the f is being created:
+    """This module is required to create a f (or module)."""
+    # Credo: Checking the f for editable...
 
-def CheckCreatFile(path):  # Check if the file is being created:
-  """This module is required to create a file (or module)."""
-  # Сredo: Checking the file for editable...
-  
-  # Решение проблемы с закрытием файлов, которые не открывались:
-  FileOpen = True
-  
-  try:  # Создаю файл:
-    File = open(path, 'x')
-    return False
-  
-  except:  # Файл не создался:
-    FileOpen = False
-    return True
-  
-  finally:
-    try:  # Закрываю файл:
-      File.close()
-      if DeleteFile(path) == None:  # Удаляю файл:
-        raise ErrorClearFile
+    # Решение проблемы с закрытием файлов, которые не открывались:
+    file_open = True
+    f = None
 
-    except:  # Файл не закрылся:
-      if FileOpen:  # If the file open:
-        raise ErrorExitFile
+    try:  # Создаю файл:
+        f = open(link, 'x')
+        return False
+
+    except FileExistsError:  # Файл не создался:
+        file_open = False
+        return True
+
+    finally:
+        try:  # Закрываю файл:
+            f.close()
+            if delete_file(link) is None:  # Удаляю файл:
+                raise ErrorClearFile
+
+        except:  # Файл не закрылся:
+            if file_open:  # If the f open:
+                raise ErrorExitFile
