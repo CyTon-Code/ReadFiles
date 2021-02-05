@@ -9,7 +9,7 @@ def whats_file_name(path_file: str):  # "read/terminals/index.terminal"
 
     # Возвращаю имя файла:
 
-    # name = ''
+    name = ''
     i = 0
     n = len(path_file)-1
     while i <= n:
