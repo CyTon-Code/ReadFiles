@@ -18,8 +18,3 @@ def whats_file_name(link: str):
 
     # Return filename:
     return whats_file_name(name)
-
-
-# test:
-tmp = whats_file_name("read/terminals/index.terminal")
-print(tmp, type(tmp))
