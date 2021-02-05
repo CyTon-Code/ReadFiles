@@ -1,30 +1,25 @@
-def whats_file_name(path_file: str):  # "read/terminals/index.terminal"
-    # Если это не ссылка а мусор то сваливаю:
-    if path_file == "" or path_file == " " or path_file == "\n" or path_file == "\t":
+def whats_file_name(link: str):
+    # Expected example:  # "read/terminals/index.terminal"
+
+    # If this is not a link, but garbage, then exit:
+    if link == "" or link == " " or link == "\n" or link == "\t":
         return None
 
-    # Если это не ссилка, то это имя файла:
-    if "/" not in path_file and "\\" not in path_file:
-        return path_file
+    # If it is not a link, then this is the filename:
+    if "/" not in link and "\\" not in link:
+        return link
 
-    # Возвращаю имя файла:
+    # Cut filename from link:
     name = ''
-    for i in path_file:
+    for i in link:
         name += i
         if i in "\\/":
             name = ''
 
+    # Return filename:
     return whats_file_name(name)
 
 
+# test:
 tmp = whats_file_name("read/terminals/index.terminal")
-print(tmp, type(tmp))
-
-tmp = whats_file_name("read/terminals/index.terminal/")
-print(tmp, type(tmp))
-
-tmp = whats_file_name("index.terminal")
-print(tmp, type(tmp))
-
-tmp = whats_file_name("")
 print(tmp, type(tmp))
