@@ -11,7 +11,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 from DeleteFile.main import DeleteFile
 from CheckFile.main import CheckFile
 
-def CheckCreatFile(AddressFile):  # Check if the file is being created:
+def CheckCreatFile(path):  # Check if the file is being created:
   """This module is required to create a file (or module)."""
   # Сredo: Checking the file for editable...
   
@@ -19,7 +19,7 @@ def CheckCreatFile(AddressFile):  # Check if the file is being created:
   FileOpen = True
   
   try:  # Создаю файл:
-    File = open(AddressFile, 'x')
+    File = open(path, 'x')
     return False
   
   except:  # Файл не создался:
@@ -29,7 +29,7 @@ def CheckCreatFile(AddressFile):  # Check if the file is being created:
   finally:
     try:  # Закрываю файл:
       File.close()
-      if DeleteFile(AddressFile) == None:  # Удаляю файл:
+      if DeleteFile(path) == None:  # Удаляю файл:
         raise ErrorClearFile
 
     except:  # Файл не закрылся:
