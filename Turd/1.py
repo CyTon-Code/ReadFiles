@@ -8,16 +8,6 @@ def whats_file_name(path_file: str):  # "read/terminals/index.terminal"
         return path_file
 
     # Возвращаю имя файла:
-
-    name = ''
-    i = 0
-    n = len(path_file)-1
-    while i <= n:
-        if path_file[n] in "\\/":
-            break
-        name = path_file[n] + name
-        n -= 1
-    print(name)
     name = ''
     for i in path_file:
         name += i
