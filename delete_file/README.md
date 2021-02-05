@@ -13,5 +13,5 @@
 - If you only use the function for the file delete effect,
 then in this case: both False and True say: The specified file is no longer
 exists at the specified address. And if you check the return type: type
-(DeleteFile (AddressFile)) == bool then True (file deleted) and False (file
+(delete_file (link)) == bool then True (file deleted) and False (file
 not deleted).

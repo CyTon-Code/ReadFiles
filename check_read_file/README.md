@@ -16,4 +16,4 @@
  Detailed instructions for using the module:
 </h4>
 
-- [-info CheckReadFile](https://github.com/CyTon-Code/WorkingWithFiles/blob/refactoring/CheckReadFile/info.txt)
+- [-info check_read_file](https://github.com/CyTon-Code/WorkingWithFiles/blob/refactoring/CheckReadFile/info.txt)

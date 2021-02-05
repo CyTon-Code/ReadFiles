@@ -7,7 +7,8 @@ def whats_file_name(link: str):
     whats_file_name("read/terminals/index.terminal")"""
 
     # If this is not a link, but garbage, then exit:
-    if equal(link, "") or equal(link, " ") or equal(link, "\n") or equal(link, "\t"):
+    if equal(link, "") or equal(link, " ") or (
+            equal(link, "\n") or equal(link, "\t")):
         return None
 
     # If it is not a link, then this is the filename:

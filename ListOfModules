@@ -15,10 +15,10 @@ it.
 
 
 Important modules:
-  [_] CheckReadFile - The module checks the readability of files.
+  [_] check_read_file - The module checks the readability of files.
   [@] write_file - The module for checking a file (for editing and creating)
 before working with it.
-  [!] DeleteFile - Module for deleting a file, if it exists.
+  [!] delete_file - Module for deleting a file, if it exists.
   [*] CreateFile - Module for creating a file if the file does not exist.
 
 
@@ -36,4 +36,4 @@ does not point to the file).
 Plugins:
   [!] check_file - Module for checking a file (for presence) before working with
 it.
-  [_] CheckReadFile - The module checks the readability of files.
+  [_] check_read_file - The module checks the readability of files.

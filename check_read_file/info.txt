@@ -8,10 +8,10 @@ The function can also answer the questions: "Will the file be closed?" and
 
 If you need to know the answer to the question:
   "The file does not exist?" - You can substitute the result of
-"check_file(AddressFile)" into the "bool()" function. "False" and "None" - No,
-"True" - Yes. "bool(check_file(AddressFile))".
+"check_read_file(link)" into the "bool()" function. "False" and "None" - No,
+"True" - Yes. "bool(check_read_file(link))".
   "The file is unreadable, is it?" - The answer will be in the return type.
-NoneType - Yes, bool - No. "type(check_file(AddressFile)) == None".
+NoneType - Yes, bool - No. "type(check_read_file(link)) == None".
   "Will the file be closed?" - use the functionality: "try", "except".
 
 

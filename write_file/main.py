@@ -2,6 +2,8 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
 
+from check_file.main import check_file as check_file
+
 
 class ErrorCreate(Exception):
     pass
@@ -13,34 +15,35 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     pass
 
 
-def create_file(AddressFile):
-    f = open(AddressFile, 'w')
+def create_file(link):
+    f = open(link, 'w')
     f.close()
     pass
 
 
 # def
-from check_file.main import check_file as check_file
 
 
-def write_file(address_file):  # Check if the file exists:
+def write_file(link):  # Check if the file exists:
     """This module is required to read a file (or module).
     It can also check if a file (or module) exists."""
-    # Сredo: Checking the file for editable...
+    # Credo: Checking the file for editable...
 
     file_open = True
-    try:  # Открываю файл или Создаю файл:
-        File = open(address_file, 'w')
+    f = None
 
-        if check_file(address_file):  # Если файла нет:
+    try:  # Открываю файл или Создаю файл:
+        f = open(link, 'w')
+
+        if check_file(link):  # Если файла нет:
             # Я буду проверять на создание файла:
             try:  # Создаю файл:
-                f = open(address_file, 'w')
+                f = open(link, 'w')
                 f.close()
                 return False
 
             except:  # Не создал файл:
-                FileOPn = False
+                file_open = False
                 return None
 
             #     except:
@@ -48,7 +51,7 @@ def write_file(address_file):  # Check if the file exists:
             finally:
                 try:  # Удаляю файл
                     from delete_file.main import delete_file
-                    delete_file(address_file)
+                    delete_file(link)
 
                 except:  # Не удалил файл:
                     if file_open:  # If the file open:
@@ -61,21 +64,21 @@ def write_file(address_file):  # Check if the file exists:
         else:  # Файл есть:
             # Я буду проверять на редактирование файла:
             try:  # записываю в файл:
-                File.write('')
+                f.write('')
                 return False
 
             except:  # Записать не получилось:
                 return None
 
     except:  # Файл не открылся или не создался:
-        print("File is not defined. File:", address_file)
+        print("f is not defined. f:", link)
         file_open = False
 
         return not file_open  # True
 
     finally:
         try:  # Закрываю файл:
-            File.close()
+            f.close()
             pass
 
         except:  # Файл не закрылся:
