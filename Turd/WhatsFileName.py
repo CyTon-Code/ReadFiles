@@ -1,5 +1,6 @@
 def whats_file_name(link: str):
-    # Expected example:  # "read/terminals/index.terminal"
+    """Expected example:\n
+    whats_file_name("read/terminals/index.terminal")"""
 
     # If this is not a link, but garbage, then exit:
     if link == "" or link == " " or link == "\n" or link == "\t":
@@ -17,9 +18,4 @@ def whats_file_name(link: str):
             name = ''
 
     # Return filename:
-    return whats_file_name(name)
-
-
-# test:
-tmp = whats_file_name("read/terminals/index.terminal")
-print(tmp, type(tmp))
+    return whats_file_name(name)  # reprocessing
