@@ -1,5 +1,5 @@
 import os
-import whats_file_name
+from whats_file_name import whats_file_name
 from check_file.main import check_file
 
 
