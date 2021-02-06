@@ -14,7 +14,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
     exit()  # Answer: I'm leaving, I'm a module.
     pass
-db = open("db", "r+")
+# db = open("db", "r+")
 def bd_read(key):  # Вернуть содержимое по ключу или ничего если ключа нет
     return None#value
 
