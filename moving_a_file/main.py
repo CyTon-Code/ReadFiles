@@ -1,5 +1,5 @@
 import os
-import whats_file_name
+from whats_file_name import main
 from check_file.main import check_file
 
 
@@ -23,8 +23,8 @@ def moving_a_file(link: str, path="work/moving_a_file.py"):
     """
     # TO DO: Нужно доработать проверку разности имен, а также проверку
     # на сущестование файла перед перемещением.
-    if equal(link, path) or not equal(whats_file_name(link),
-                                      whats_file_name(path)):
+    if equal(link, path) or not equal(main(link),
+                                      main(path)):
         # Также сюда нужно попасть когда имена в адресах не
         # совпадают нельзя перемещать переименовывая файл.
         # адресса совпадают: перемещать не нужно.
