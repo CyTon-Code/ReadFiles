@@ -1,9 +1,11 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
+error_code = 2
 
 
 class TheFileDidNotClose(Exception):
-    pass
+    def __init__(self):
+        print(f"error: {error_code}")
 
 
 if __name__ == "__main__":  # If not imported, I exit is the module:

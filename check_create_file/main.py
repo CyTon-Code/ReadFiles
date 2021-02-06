@@ -2,22 +2,22 @@
   Via os.system or return (RUN) - doesn't work."""
 from delete_file.main import delete_file
 
+error_code = 3
+
 
 class ErrorClearFile(Exception):
-    pass
+    def __init__(self):
+        print(f"error: {error_code}. ")
 
 
 class ErrorExitFile(Exception):
-    pass
-
-
-# from check_file.main import check_file
+    def __init__(self):
+        print(f"error: {error_code}")
 
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
     exit()  # Answer: I'm leaving, I'm a module.
-    pass
 
 
 def check_create_file(link):  # Check if the f is being created:

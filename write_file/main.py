@@ -4,9 +4,12 @@
 
 from check_file.main import check_file as check_file
 
+error_code = 1
+
 
 class ErrorCreate(Exception):
-    pass
+    def __init__(self):
+        print(f"error: {error_code}")
 
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
