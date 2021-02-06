@@ -36,4 +36,30 @@ def bd_check(key):  # Возвращает состояние есть ли кл
 # .Удалить ключ с значением и вернуть да если удалил ложь если не удалил(если ключей было два) и ничего если ключа нет.
 # .Создать новый ключ с пустым значением. Вернуть да если создал, нет если уже есть ключ(ключи), ничего если(хз).
 
-def core(link):  # Check if the file exists:
+def core(command:list):  # Working with the database.
+    if command[ 0 ] == "CREATE":  # Добавить елемент - Добавить ключ с значением в конец.
+        pass
+    elif command[0] == "UPDATE":  # Изменить элемент - Изменить первый попавшийся ключ.
+        pass
+    elif command[0] == "READER":  # Читать элемент - Читать первый попавшийся ключ.
+        pass
+    elif command[0] == "SEARCH":  # Искать элемент - Искать первый попавшийся ключ.
+        pass
+    elif command[0] == "DELETE":  # Удалить элемент - Убрать первый попавшийся ключ.
+        pass
+    elif command[0] == "NUMBER":  # Считать элемент - Узнать количество ключей
+        pass
+#     i = ["U", "R"]
+#     if command[0] in i:  # Update / Rename
+#         pass
+#     i = ["D"]
+#     if command[0] in i:  # Delete
+#         pass
+#     "C"
+#     elif command[0] == :  # Create \ New
+#         pass
+#     elif command[0] == "S":  # Search
+#         pass
+#     else:
+#         pass
+#     pass
