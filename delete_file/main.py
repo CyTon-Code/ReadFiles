@@ -17,13 +17,7 @@ def delete_file(address_file):  # Delete existing file:
     try:  # Delete the file:
         os.remove(address_file)
         return True  # Answer: The file existed and was deleted.
-    except FileNotFoundError:
-        pass
-    except TypeError:
-        pass
-    except OSError:
-        pass
-    except IsADirectoryError:
-        pass
+
     except:  # Delete failed:
         return None  # Answer: The file exists but has not been deleted.
+# FileNotFoundError TypeError OSError IsADirectoryError:
