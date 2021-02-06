@@ -27,10 +27,13 @@ def moving_a_file(link: str, path="work/moving_a_file.py"):
                                   whats_file_name(path)):
         # Также сюда нужно попасть когда имена в адресах не
         # совпадают нельзя перемещать переименовывая файл.
-        pass  # адресса совпадают: перемещать не нужно.
-        return False
+        # адресса совпадают: перемещать не нужно.
+        return True
     else:  # Перемещаем и переменовываем файл:
         if check_file(link):  # if (os.path.exists(link)):
             os.replace(link, path)  # cut.
-        # вернуть адресс первого располоения:
-        return True
+            # вернуть адресс первого располоения:
+            return False
+
+        else:
+            return None
