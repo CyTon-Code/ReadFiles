@@ -19,16 +19,16 @@ Important modules:
   [@] write_file - The module for checking a file (for editing and creating)
 before working with it.
   [!] delete_file - Module for deleting a file, if it exists.
-  [*] CreateFile - Module for creating a file if the file does not exist.
+  [*] create_file - Module for creating a file if the file does not exist.
 
 
 Additional modules:
-  [*] EditFile - The module for editing the file, if it exists.
-  [*] SaveFile - Module for editing a file if it does not exist.
-  [*] RenameFile - Module for renaming the file, if it exists.
-  [*] CutFile - Module for moving the file if the file exists (the old path
+  [*] edit_file - The module for editing the file, if it exists.
+  [*] save_file - Module for editing a file if it does not exist.
+  [*] rename_file - Module for renaming the file, if it exists.
+  [*] cut_file - Module for moving the file if the file exists (the old path
 points to the file).
-  [*] SafeCutFile - Module for moving the file if the file exists (the old path
+  [*] safe_cut_File - Module for moving the file if the file exists (the old path
 points to the file) and if there is no file in the final path (the new path
 does not point to the file).
 
