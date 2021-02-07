@@ -1,12 +1,8 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
-error_code = 2
+from checkread import FileDidNotClose, check_read
 
-
-class TheFileDidNotClose(Exception):
-    def __init__(self):
-        print(f"error: {error_code}")
-
+error_code = "Я пытался открывать и читать файл."
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
@@ -24,13 +20,7 @@ def check_read_file(link):  # Check if the file exists:
 
     try:  # Opens a file:
         f = open(link, 'r')
-
-        try:  # The file is read:
-            f.read()
-            return False  # Answer: The file is there, and it has been read.
-
-        except:  # f not read:
-            return None  # Answer: The file is present, but not readable.
+        return check_read(f)
 
     except:  # The file did not open:
         print("File is not defined. File:", link)
@@ -46,5 +36,5 @@ def check_read_file(link):  # Check if the file exists:
 
         except:  # The file didn't close:
             if file_open:  # If the file open:
-                raise TheFileDidNotClose  # Answer: The file won't close! We
+                raise FileDidNotClose  # Answer: The file won't close! We
                 # throw in the program: "Exception".
