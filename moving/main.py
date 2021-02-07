@@ -1,33 +1,20 @@
+"""
+    The module works only through import.
+    Via os.system or return (RUN) - doesn't work.
+"""
+
 import os
-from whatsfilename import main
 from check.main import check_file
+from whatsfilename.main import whats_file_name
 
-
-def equal(a: str, b: str):
-    return a == b
+if __name__ == "__main__":  # If not imported, I exit is the module:
+    print("I am is Module!!! Bye Bye!!!")
+    exit()  # Answer: I'm leaving, I'm a module.
 
 
 def moving_a_file(link: str, path="work/moving_a_file.py"):
-    """
-    функция которая перемещает модули между ворк и хранилием в реад...
-    Cut:
-    .переменстить файл
-    .сохранить имя а точнее первый адресс.
-    .переименоать в либ.
-     .при переподключении к другому модулю:
-      .переметстить назад и вернуть имя.
-      .начать с нулевого пункта.
-     .при подключении к тому же самому модулю:
-      .ничего не менять.
-    .подключить модуль.
-    """
-    # TO DO: Нужно доработать проверку разности имен, а также проверку
-    # на сущестование файла перед перемещением.
-    if equal(link, path) or not equal(main(link),
-                                      main(path)):
-        # Также сюда нужно попасть когда имена в адресах не
-        # совпадают нельзя перемещать переименовывая файл.
-        # адресса совпадают: перемещать не нужно.
+    # If the names are the same, but the addresses are different, you can move:
+    if link == path or not whats_file_name(link) == whats_file_name(path):
         return True
     else:  # Перемещаем и переменовываем файл:
         if check_file(link):  # if (os.path.exists(link)):
@@ -35,5 +22,5 @@ def moving_a_file(link: str, path="work/moving_a_file.py"):
             # вернуть адресс первого располоения:
             return False
 
-        else:
+        else:  # There is no file, so there is no point in moving:
             return None

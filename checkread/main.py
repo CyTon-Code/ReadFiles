@@ -1,11 +1,13 @@
-"""The module works only through import.
-  Via os.system or return (RUN) - doesn't work."""
-from checkread import file_read, file_close
+"""
+    The module works only through import.
+    Via os.system or return (RUN) - doesn't work.
+"""
+
+from plugin import file_read, file_close
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
     exit()  # Answer: I'm leaving, I'm a module.
-    pass
 
 
 def check_read_file(link):  # Check if the file exists:
@@ -29,4 +31,5 @@ def check_read_file(link):  # Check if the file exists:
         # read.
 
     finally:
-        file_close(f, file_open)
+        if file_open:  # If the file open:
+            file_close(f, "Я пытался открывать и читать файл.")

@@ -1,14 +1,10 @@
-"""The module works only through import.
-  Via os.system or return (RUN) - doesn't work."""
+"""
+    The module works only through import.
+    Via os.system or return (RUN) - doesn't work.
+"""
+
 from check.main import check_file
-
-error_code = 4
-
-
-class FileDidNotClose(Exception):
-    def __init__(self):
-        print(f"error: {error_code}")
-
+from plugin import file_close
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
@@ -16,17 +12,18 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     pass
 
 
-def check_file(link):  # Check if the file exists:
+def edit_file(link):  # Edit file if it exists:
     """This module is required to read a file (or module).
     It can also check if a file (or module) exists."""
     # Credo: Checking file readability...
-    if check_file(link):  # Я редактирую только если файл есть:
+    if check_file(link):  # I only edit if the file exists:
         pass
+
     file_open = True
-    file = None
+    f = None
 
     try:  # create a file:
-        file = open(link, 'w')
+        f = open(link, 'w')
         return False  # Answer: The file is there.
 
     except:  # The file did not create but it is live:
@@ -37,10 +34,5 @@ def check_file(link):  # Check if the file exists:
         return not file_open  # Answer: The file is missing or has not been read.
 
     finally:
-        try:  # Closes the file:
-            file.close()
-
-        except:  # The file didn't close:
-            if file_open:  # If the file open:
-                raise FileDidNotClose  # Answer: The file won't close! We throw in
-                # the program: "Exception".
+        if file_open:  # If the file open:
+            file_close(f, "Я пытался редактировать файл")
