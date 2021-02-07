@@ -1,6 +1,6 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
-from delete_file.main import delete_file
+from delete.main import delete_file
 
 error_code = 3
 

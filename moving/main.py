@@ -1,6 +1,6 @@
 import os
-from whats_file_name import main
-from check_file.main import check_file
+from whatsfilename import main
+from check.main import check_file
 
 
 def equal(a: str, b: str):

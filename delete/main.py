@@ -5,7 +5,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
     exit()  # Answer: I'm leaving, I'm a module.
 
-from check_file.main import check_file
+from check.main import check_file
 import os
 
 

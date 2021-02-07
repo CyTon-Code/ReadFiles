@@ -2,7 +2,7 @@
 """The module works only through import.
   Via os.system or return (RUN) - doesn't work."""
 
-from check_file.main import check_file as check_file
+from check.main import check_file as check_file
 
 error_code = 1
 
