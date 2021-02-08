@@ -1,7 +1,8 @@
-Эта функция не работает с файлами. Ее задача вырезать имя из адресса.
+This function does not work with files.
+The function's task is to find a name in an address.
 
-Она просто разделяет строку испольузя сепаратор.
+whatsfilename just splits the string using a delimiter.
 
-Каждый новый елемент перезаписывает предедущий.
+Each new element overwrites the previous one.
 
-В конечном итоге операций, остается последним елементом - имя файла.
+As a result of the operation, the last element is the file name.
