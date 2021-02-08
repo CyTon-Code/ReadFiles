@@ -1,4 +1,3 @@
-from _typeshed import NoneType
 from typing import IO
 
 
@@ -12,7 +11,7 @@ class ErrorClearFile(Exception):
         pass
 
 
-def file_read(file: IO) -> bool:
+def file_read(file: IO) -> bool or None:
     try:  # The file is read:
         file.read()
         return False  # Answer: The file is there, and it has been read.
@@ -21,7 +20,7 @@ def file_read(file: IO) -> bool:
         return None  # Answer: The file is present, but not readable.
 
 
-def file_close(file: IO, error_code: str) -> NoneType:
+def file_close(file: IO, error_code: str) -> None or Exception:
     try:  # Closes the file:
         file.close()
 

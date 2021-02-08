@@ -10,17 +10,19 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def check_read_file(link):  # Check if the file exists:
-    """This module is required to read a file (or module).
-    It can also check if a file (or module) exists."""
+def check_read_file(link: str) -> bool or Exception or None:  # Check if the file exists:
+    """
+        This module is required to read a file (or module).
+        It can also check if a file (or module) exists.
+    """
     # Credo: Checking file readability...
 
     file_open = True
-    f = None
+    file = None
 
     try:  # Opens a file:
-        f = open(link, 'r')
-        return file_read(f)
+        file = open(link, 'r')
+        return file_read(file)
 
     except:  # The file did not open:
         print("File is not defined. File:", link)
@@ -32,4 +34,4 @@ def check_read_file(link):  # Check if the file exists:
 
     finally:
         if file_open:  # If the file open:
-            file_close(f, "Я пытался открывать и читать файл.")
+            file_close(file, "Я пытался открывать и читать файл.")

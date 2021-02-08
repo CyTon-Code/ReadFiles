@@ -3,7 +3,7 @@
     Via os.system or return (RUN) - doesn't work.
 """
 
-from check.main import check_file
+from checkopen.main import check_file
 from plugin import file_close
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
@@ -12,7 +12,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     pass
 
 
-def edit_file(link):  # Edit file if it exists:
+def edit_file(link: str) -> bool or Exception:  # Edit file if it exists:
     """This module is required to read a file (or module).
     It can also check if a file (or module) exists."""
     # Credo: Checking file readability...
@@ -20,10 +20,10 @@ def edit_file(link):  # Edit file if it exists:
         pass
 
     file_open = True
-    f = None
+    file = None
 
     try:  # create a file:
-        f = open(link, 'w')
+        file = open(link, 'w')
         return False  # Answer: The file is there.
 
     except:  # The file did not create but it is live:
@@ -35,4 +35,4 @@ def edit_file(link):  # Edit file if it exists:
 
     finally:
         if file_open:  # If the file open:
-            file_close(f, "Я пытался редактировать файл")
+            file_close(file, "Я пытался редактировать файл")
