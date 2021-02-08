@@ -10,14 +10,14 @@ the module or its documentation is already underway.
 
 
 Main modules:
-  [!] check_file - Module for checking a file (for presence) before working with
+  [!] check - Module for checking a file (for presence) before working with
 it.
 
 
 Important modules:
-  [_] check_read_file - The module checks the readability of files.
-  [@] write_file - The module for checking a file (for editing and creating)
-before working with it.
+  [_] checkread - The module checks the readability of files.
+  [_] checkedit - Module for checking a file (for editing) before working with it.
+  [_] checkcreat - Module for checking a file (for the possibility of creation) before working with it.
   [!] delete_file - Module for deleting a file, if it exists.
   [*] create_file - Module for creating a file if the file does not exist.
 
@@ -34,6 +34,6 @@ does not point to the file).
 
 
 Plugins:
-  [!] check_file - Module for checking a file (for presence) before working with
+  [!] check - Module for checking a file (for presence) before working with
 it.
-  [_] check_read_file - The module checks the readability of files.
+  [_] checkread - The module checks the readability of files.
