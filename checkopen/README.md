@@ -15,4 +15,4 @@
  Detailed instructions for using the module:
 </h4>
 
-- [-info check_file](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/check_file/info.txt)
+- [-info checkopen](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/check_file/info.txt)
