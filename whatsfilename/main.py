@@ -8,7 +8,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def cut_name(link):  # Cut filename from link:
+def _cut_name(link: str) -> str:  # Cut filename from link:
     name = ''
     for i in link:
         name += i
@@ -17,7 +17,7 @@ def cut_name(link):  # Cut filename from link:
     return name
 
 
-def whats_file_name(link: str):
+def whats_file_name(link: str) -> str:
     """
         I am processing file addresses and returning the filename.
         Using delimiters: / \\
@@ -33,7 +33,7 @@ def whats_file_name(link: str):
         return link
 
     # Cut filename from link:
-    name = cut_name(link)
+    name = _cut_name(link)
 
     # Return filename:
     return whats_file_name(name)  # reprocessing...
