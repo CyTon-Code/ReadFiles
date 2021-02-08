@@ -3,7 +3,7 @@
     Via os.system or return (RUN) - doesn't work.
 """
 
-from check.main import check_file
+from checkopen.main import check_file
 import os
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
@@ -11,14 +11,13 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def delete_file(address_file):  # Delete existing file:
-    if check_file(address_file):  # If the file does not exist:
+def delete_file(link: str) -> bool or None:  # Delete existing file:
+    if check_file(link):  # If the file does not exist:
         return False  # Answer: The file to be deleted does not exist.
 
     try:  # Delete the file:
-        os.remove(address_file)
+        os.remove(link)
         return True  # Answer: The file existed and was deleted.
 
     except:  # Delete failed:
         return None  # Answer: The file exists but has not been deleted.
-# FileNotFoundError TypeError OSError IsADirectoryError:

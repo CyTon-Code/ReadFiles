@@ -4,7 +4,7 @@
 """
 
 import os
-from check.main import check_file
+from checkopen.main import check_file
 from whatsfilename.main import whats_file_name
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
