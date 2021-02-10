@@ -8,7 +8,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def main(args: list) -> int:  # I work with files somehow:
+def file_manager(args: list) -> int:  # I work with files somehow:
     # Make a layout before working with files.
 
     # You must know the exact purpose before building a house.
