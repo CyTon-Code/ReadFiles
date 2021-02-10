@@ -1,53 +1,9 @@
-1. Вы должны знать точное назначение, прежде чем строить дом.
-1.1 Если вы не уверены, что конкретно хотите от функции, то это плохая идея.
+1. You must know the purpose before you build a house.
+1.1. If you are not sure what this function is, then this is a bad idea.
 
-2. Сделайте макет функции перед ее написанием.
+2. Create a dummy function before writing.
 
-3. Смело используйте готовые функции.
+3. Feel free to use ready-made functions.
 
-4. Функция должна возвращать рабочие (обработанные и понятные) ресурсы,
-Если у вас есть сила удерживать небо, то это делаете вы, а не другие.
-
-5. Никогда не печатайте, не читайте как я, всё же практика важная часть обучения.
-
-Примеры:
-
-
-2. Очень хорошие вещи: макеты, псевдо-коды и алгоритмы.
-Ошибки легче найти в коде в котором структура обновлений строится на точной цели.
-
-
-
-4. Если ваша функция обьязана получить новую фичу, и фича есть частью этой
-функции, то лучше 
-
-5. Если у вас есть две функции: print и data_processing. а вы не хотите вернуть
-сырые данные изза поддеживания чистоты кода в data_processing, третяя функция лишней не будет.
-
-
-
-1. Конкретные требования от функции должны присуцтвовать всегда,
-как и остуцтвовать ожидания невозможного.
-функция print печатает, но никак не анализиурет базу.
-
-5. If you have a function that prints text on the screen, leave it only as a function that prints text on the screen.
-
-3. If there is a function that matches the desired functionality, you can make it easier to refactor your code in the future by using this function.
-
-If you don’t know what a function is supposed to do, you’re like a moody child who always asks but doesn’t know what he wants.
-
-There should always be special requirements for the function.
-
-A function does only what its name describes.
-
-The function does not accept parameters that are not processed, especially flags
-(DO NOT USE THEM IN PARAMETERS).
-
-A function that displays text on the screen cannot do anything else.
-
-The benefits of a function you don't need are the same as a function you can't
-find if you foolishly forget the name.
-
-always use themes: decomposition, refactoring, clean code and shitty code (if you can describe the reason for the mess or if you are a masochist)
-
-Once you understand what the function does, start writing your layout code.
+4. The function must return working (processed and understandable) resources,
+ If you have the power to hold the sky, then you are doing it, not others.
