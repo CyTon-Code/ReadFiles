@@ -4,8 +4,8 @@
 """
 
 import os
-from checkopen.main import check_file
-from whatsfilename.main import whats_file_name
+from internal.check_open_file import check_file
+from additional.get_name_from_link import get_name_from_link
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
@@ -14,7 +14,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 
 def moving_a_file(link: str, path="work/moving_a_file.py"):
     # If the names are the same, but the addresses are different, you can move:
-    if link == path or not whats_file_name(link) == whats_file_name(path):
+    if link == path or not get_name_from_link(link) == get_name_from_link(path):
         return True
     
     else:  # Перемещаем и переменовываем файл:

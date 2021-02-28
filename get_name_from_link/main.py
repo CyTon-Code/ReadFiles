@@ -17,7 +17,7 @@ def _cut_name(link: str) -> str:  # Cut filename from link:
     return name
 
 
-def whats_file_name(link: str) -> str or None:
+def get_name_from_link(link: str) -> str or None:
     """
         I am processing file addresses and returning the filename.
         Using delimiters: / \\
@@ -36,4 +36,4 @@ def whats_file_name(link: str) -> str or None:
     name = _cut_name(link)
 
     # Return filename:
-    return whats_file_name(name)  # reprocessing...
+    return get_name_from_link(name)  # reprocessing...
