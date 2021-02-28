@@ -1,9 +1,6 @@
 # File readability check function.
 
-
-<h4>
- What can you expect from her:
-</h4>
+###### What can you expect from her:
 
 - 'False' - File read (address is correct).
 
@@ -11,9 +8,6 @@
 
 - 'Exception' or 'None' - The file did not close or was not read.
 
+###### Detailed instructions for using the module:
 
-<h4>
- Detailed instructions for using the module:
-</h4>
-
-- [-info check_read_file](https://github.com/CyTon-Code/WorkingWithFiles/blob/main/check_read_file/info.txt)
+- [-info check_read_file](info.txt)
