@@ -4,7 +4,7 @@
 """
 
 import os
-from internal.check_open_file import check_file
+from internal.check_open_file import check_open_file
 from additional.get_name_from_link import get_name_from_link
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
@@ -17,8 +17,8 @@ def moving_a_file(link: str, path="work/moving_a_file.py"):
     if link == path or not get_name_from_link(link) == get_name_from_link(path):
         return True
     
-    else:  # Перемещаем и переменовываем файл:
-        if check_file(link):  # if (os.path.exists(link)):
+    else:  # Перемещаем и переименовываем файл:
+        if check_open_file(link):  # if (os.path.exists(link)):
             os.replace(link, path)  # cut
             return False
 

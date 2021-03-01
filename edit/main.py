@@ -3,8 +3,8 @@
     Via os.system or return (RUN) - doesn't work.
 """
 
-from checkopen.main import check_file
-from plugin import file_close
+from internal.check_open_file import check_open_file
+from additional.file_close import file_close
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
@@ -17,7 +17,7 @@ def edit_file(link: str, line_of_text="") -> bool or Exception:  # Edit file if 
         It can also check if a file (or module) exists.
     """  # Credo: Checking file readability...
 
-    if check_file(link):  # I only edit if the file exists:
+    if check_open_file(link):  # I only edit if the file exists:
         return None
 
     file_open = True
