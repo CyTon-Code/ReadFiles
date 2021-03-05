@@ -9,15 +9,12 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 
 
 def file_manager(args: list) -> int:  # I work with files somehow:
-    # Make a layout before working with files.
-
-    # You must know the exact purpose before building a house.
-
-    # Feel free to use ready-made functions.
-
-    # The function should return working (processed and understandable)
-    #resources,
-
-    # If you have the strength to hold the sky, then you do it, not others.
+    """
+        Make a layout before working with files.
+        You must know the exact purpose before building a house.
+        Feel free to use ready-made functions.
+        The function should return working (processed and understandable) resources,
+        If you have the strength to hold the sky, then you do it, not others.
+     """
 
     return 0
